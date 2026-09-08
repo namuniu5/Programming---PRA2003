@@ -22,11 +22,8 @@ Answer the following:
 3. Is there any asymmetry as a function of their momentum?
 
 **Installation**
-bash
 # TODO: (list dependencies)
 tbd
-Usage
-bash
 # TODO: (replaced with actual command)
 tbd
 
