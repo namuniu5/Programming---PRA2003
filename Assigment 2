@@ -1,0 +1,24 @@
+def read_momenta_comp(filepath):
+    components = []
+    with open(filepath) as f:
+        event_id, n = f.readline().split()
+        for line in f: 
+            px, py, pz, code = line.split()
+            components.append((float(px), float(py), float(pz)))
+
+    return components
+def calc_momentum(px,py,pz):
+    eq = math.sqrt(px**2 + py**2 + pz**2)
+    if eq < 0:
+        print("the value is negative")
+    else:
+        return eq
+def get_momenta(filepath):
+    comp = read_momenta_comp(filepath)
+    return [calc_momentum(px, py, pz) for (px, py, pz) in comp]
+def main():
+    filepath = input("put your filepath without any '':")
+    momenta = get_momenta(filepath)
+    print("list of momenta:")
+    for p in momenta:
+        print(p)
