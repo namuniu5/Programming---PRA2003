@@ -1,0 +1,30 @@
+def count_event(filename, tcode):
+    with open(filename) as f:
+        numbers = f.read().split()
+
+    counts_per_event = []
+    i = 0
+    while i < len(numbers):
+        n_bac = int(numbers[i + 1])
+        i += 2
+
+        count = 0
+        for _ in range(n_bac):
+            code = int(numbers[i + 3])
+            if code == tcode:
+                count += 1
+            i += 4
+
+        counts_per_event.append(count)
+
+    return counts_per_event
+
+
+def avg_and_unc(values):
+    n = len(values)
+    avg = sum(values) / n
+    var = sum((v - avg) ** 2 for v in values) / (n - 1)
+    sdev = var ** 0.5
+    unc = sdev / (n ** 0.5)
+
+    return avg, unc
