@@ -1,4 +1,22 @@
+bacteria= {
+    211: "E. coli WT",
+    -211: "E. coli mutant",
+    321: "Bacillus subtilis WT",
+    -321: "Bacillus subtilis mutant",
+    2212: "Pseudomonas aeruginosa WT",
+    -2212: "Pseudomonas aeruginosa antibiotic-resistant",
+    3122: "Streptococcus pneumoniae",
+    -3122: "Capsule-deficient streptococcus pneumoniae",
+    3312: "Mycobacterium tuberculosis",
+    -3312: "Drug-resistant mycobacterium tuberculosis",
+    3334: "Salmonella enterica",
+    -3334: "Salmonella mutant",}
+    #source library for bacterial codes
+
 def count_event(filename, tcode):
+    # filename: path to your data file
+    # tcode: the bacterial code you want to count
+    # returns: a list with one count per event
     with open(filename) as f:
         numbers = f.read().split()
 
@@ -21,6 +39,8 @@ def count_event(filename, tcode):
 
 
 def avg_and_unc(values):
+    # values: a list of numbers
+    # returns: (average, uncertainty)
     n = len(values)
     avg = sum(values) / n
     var = sum((v - avg) ** 2 for v in values) / (n - 1)
