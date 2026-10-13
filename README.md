@@ -111,7 +111,6 @@ python3 --version        # should be 3.8 or newer
 ├── analysis_updated.py
 ├── plot_from_results.py
 ├── README.md
-├── asymmetry_*.png          (figures used below)
 └── data/
     ├── output-Set1.txt
     ├── ...
@@ -205,7 +204,7 @@ All figures show the relative asymmetry $A = (N_\text{WT} - N_\text{mut})/(N_\te
 
 **Figure 6.** *S. enterica* WT vs mutant. With only 67 to 209 cells per bin and file, the error bars (0.02 to 0.05) are as large as or larger than the overall asymmetry (0.015 ± 0.009). All bins are consistent with it and with zero (at most 1.8σ), and the values scatter without a pattern. Only a very large dependence on momentum could have been detected.
 
-All six pairs together are in `asymmetry_all_pairs.png`.
+Running plot_from_results.py also creates asymmetry_all_pairs.png, which shows all six pairs in one figure.
 
 ## 8. Use of AI
 
