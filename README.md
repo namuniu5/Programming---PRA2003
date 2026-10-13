@@ -178,25 +178,31 @@ The fitness-cost hypothesis is supported for four of the six strains and cannot 
 All figures show the relative asymmetry $A = (N_\text{WT} - N_\text{mut})/(N_\text{WT} + N_\text{mut})$ (dimensionless) against the momentum bin, with the bin edges in units of 10⁻²⁰ kg·m/s on the x-axis. The bins have roughly equal numbers of cells, so they are drawn with equal spacing. Each point is the mean of the ten files, and the error bars are $\sigma/\sqrt{10}$ of the ten per-file values of $A$ (Section 3.2). The blue band is the overall $A$ of the pair $\pm$ its uncertainty, and the grey line marks $A = 0$. Hollow markers are unreliable bins (†, Section 3.3). A triangle at the edge of the plot marks an unreliable bin whose value lies outside the plotted range, with its value written next to it. The vertical range of each plot is set by the reliable bins.
 
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/823bbe81-0604-4ace-aebf-e242d94cb552" />
+
 **Figure 1.** *P. aeruginosa* WT vs antibiotic-resistant. $A$ is positive in all bins and flat at 0.0075–0.0094 up to $p \approx 4.9$ (each 6σ to 11σ from zero), then rises to 0.0129 ± 0.0016 in the 4.9–7.7 bin, about 2.9σ above the lowest bin. The two highest bins (0.0178 ± 0.0054 and 0.038 ± 0.024, triangles) are unreliable, so the rise above $p \approx 8$ cannot be confirmed.
 
 <img width="1600" height="1000" alt="asymmetry_211" src="https://github.com/user-attachments/assets/03045e6d-c2db-4718-aa07-4413fe2c8824" />
+
 **Figure 2.** *E. coli* WT vs mutant. $A$ is positive in every bin and small (0.0001 to 0.0013 in the reliable bins). It increases slightly with momentum, with the highest reliable bin (0.00133 ± 0.00011) about 3σ above the 1.7–2.7 bin. The lowest bin (hollow) and the highest bin (triangle, 0.0049 ± 0.0031) are unreliable.
 
 
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/3a7e83a2-17bc-4537-bb4d-f17d4d5673e4" />
+
 **Figure 3.** *S. pneumoniae* WT vs capsule-deficient. The seven reliable bins scatter around the overall value (0.0089) between 0.0055 and 0.0097, with no trend with momentum. The highest bin (−0.0045 ± 0.018, triangle) is unreliable.
 
 
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/74d5a1e3-6f8e-40f2-9256-dbdaa7a628c1" />
+
 **Figure 4.** *B. subtilis* WT vs mutant. The overall asymmetry is small (0.0011 ± 0.0002) and the individual bins are mostly less than 1.5σ from zero. Only the 3.8–6.0 bin (0.0021 ± 0.0006, 3.4σ) stands out, and the 1.1–1.7 bin is slightly negative. No trend with momentum can be identified. The two highest bins are unreliable.
 
 
 <img width="1600" height="1000" alt="image" src="https://github.com/user-attachments/assets/9556bf83-c0fe-4fd8-abc0-6e0b57352294" />
+
 **Figure 5.** *M. tuberculosis* WT vs drug-resistant. Every reliable bin has a large error bar (about 0.004 to 0.006) and is at most 2σ from zero, consistent with the small positive overall value (0.0056 ± 0.0020). The two highest bins (about 4,000 cells per file) are unreliable; the highest (0.104 ± 0.100) is off the scale.
 
 
 <img width="1600" height="1000" alt="asymmetry_3334" src="https://github.com/user-attachments/assets/829b42e1-f611-4d1b-8afb-d9b18a9c34ee" />
+
 **Figure 6.** *S. enterica* WT vs mutant. With only 67 to 209 cells per bin and file, the error bars (0.02 to 0.05) are as large as or larger than the overall asymmetry (0.015 ± 0.009). All bins are consistent with it and with zero (at most 1.8σ), and the values scatter without a pattern. Only a very large dependence on momentum could have been detected.
 
 All six pairs together are in `asymmetry_all_pairs.png`.
