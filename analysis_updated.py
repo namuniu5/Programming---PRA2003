@@ -10,7 +10,7 @@ of cells (quantile bins, edges taken from one file). The last bin is open-ended,
 so no cell is discarded.
 
 Usage:
-    python3 analysis.py
+    python3 analysis_updated.py
 Edit FILES below if your data files have other names or are in another folder.
 '''
 
