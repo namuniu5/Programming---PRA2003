@@ -92,7 +92,7 @@ For every cell of a pair the total momentum $p = \sqrt{p_x^2 + p_y^2 + p_z^2}$ i
 
 ## 4. Installation
 
-Requirements: **Python 3.8+**. `analysis.py` uses no imports at all, so nothing needs to be installed for it. `plot_from_results.py` needs **matplotlib**:
+Requirements: **Python 3.8+**. `analysis_updated.py` uses no imports at all, so nothing needs to be installed for it. `plot_from_results.py` needs **matplotlib**:
 
 ```bash
 python3 -m pip install matplotlib
@@ -108,7 +108,7 @@ python3 --version        # should be 3.8 or newer
 
 ```
 <repo>/
-├── analysis.py
+├── analysis_updated.py
 ├── plot_from_results.py
 ├── README.md
 ├── asymmetry_*.png          (figures used below)
@@ -127,10 +127,10 @@ Run both scripts from a terminal inside the repository folder.
 **Step 1: analysis.** Reads the data and writes the result tables.
 
 ```bash
-python3 analysis.py
+python3 analysis_updated.py
 ```
 
-The list of input files is set in the `FILES` variable at the top of `analysis.py` (`output-Set1.txt` to `output-Set10.txt`). Edit it if your files have different names or are in another folder. The script reads each file line by line, so memory use stays low, and counts the strains and fills the momentum bins in the same pass. It first finds the bin edges from `output-Set6.txt`, then reads all ten files (this takes a while: tens of minutes with plain Python), prints progress for each file, and writes all tables to `results.md`. `N_BINS` (default 8) and `EDGE_STEP` (default 20) at the top of the script set the number of momentum bins and the sampling used to find the edges.
+The list of input files is set in the `FILES` variable at the top of `analysis_updated.py` (`output-Set1.txt` to `output-Set10.txt`). Edit it if your files have different names or are in another folder. The script reads each file line by line, so memory use stays low, and counts the strains and fills the momentum bins in the same pass. It first finds the bin edges from `output-Set6.txt`, then reads all ten files (this takes a while: tens of minutes with plain Python), prints progress for each file, and writes all tables to `results.md`. `N_BINS` (default 8) and `EDGE_STEP` (default 20) at the top of the script set the number of momentum bins and the sampling used to find the edges.
 
 **Step 2: figures.** Reads `results.md` (not the data) and makes the figures.
 ```bash
